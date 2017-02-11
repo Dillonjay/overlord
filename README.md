@@ -1,5 +1,9 @@
 # OVERLORD
 
+## This is a code refactor by Dillon Lundell. 
+### Goals
+Refactor Redux code. Deploy application. More to come.   
+
 A project management application designed specifically for Agile software developement.
 
 ### Created With 
