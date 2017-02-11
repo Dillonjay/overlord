@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 import customStyles from './dashboard';
 import ProjectCreate from '../components/create_project';
 import StoryCreate from '../components/create_user_story';
-import Timeline from 'react-calendar-timeline';
+// import Timeline from 'react-calendar-timeline';
 import moment from 'moment';
 import Dragula from 'dragula';
 
@@ -104,13 +104,7 @@ class Projects extends Component {
       <div id="projects-box">
 
       <div id="timeline-cal">
-        <Timeline
-         groups={this.props.projectList[0] ? this.props.projectList[0].map(this.groupCreate):[]}
-         items={this.props.projectList[0] ? this.props.projectList[0].map(this.itemCreate):[]}
-         defaultTimeStart={moment().add(-7, 'day')}
-         defaultTimeEnd={moment().add(6, 'month')}
-         sidebarWidth="1"
-        />
+     
       </div>
 
 

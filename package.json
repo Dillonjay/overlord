@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --recursive --reporter=nyan ./spec/.setup.js ./spec",
     "lint": "node ./node_modules/eslint/bin/eslint.js ./client",
-    "start": "babel src/server/server.js"
+    "start": "node src/server/server.js"
   },
   "author": "repowranglers",
   "license": "ISC",
@@ -70,7 +70,6 @@
     "react": "^15.2.1",
     "react-addons-css-transition-group": "^15.3.0",
     "react-addons-test-utils": "^15.2.1",
-    "react-calendar-timeline": "^0.8.6",
     "react-dom": "^15.2.1",
     "react-dragula": "^1.1.16",
     "react-easy-transition": "0.0.5",

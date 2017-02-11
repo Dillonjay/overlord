@@ -1,15 +1,15 @@
 const express = require( 'express');
 const app = express();
 const passport = require( 'passport');
-const Strategy GithubStrategy = require('passport-github').Strategy
+const GithubStrategy = require('passport-github').Strategy
 const browserify = require( 'browserify-middleware');
 const path = require( 'path');
 const db = require( './db.js');
 const bodyparser = require( 'body-parser');
 const session = require( 'express-session');
-const projects = require('./models/projects.js)'
-const cookieParser = require( 'cookie-parser)'
-const users = require( './models/users)'
+const projects = require('./models/projects.js')
+const cookieParser = require( 'cookie-parser')
+const users = require( './models/users')
 const resources = require( './models/resources');
 const Promise = require( 'bluebird');
 const stories = require( './models/stories')
@@ -281,7 +281,7 @@ app.patch('/api/users/company/:gh_name', (req, res) => {
 //----------------- Serve JS Assets -------------------------//
 //----------------------------------------------------------//
 app.get('/bundle.js',
- browserify(__dirname +'/../client/index.js', {
+ browserify(path.join(__dirname, '..', 'client', 'index.js'), {
     transform: [ [ require('babelify'), { presets: ['es2015', 'stage-0', 'react'] } ] ]
   })
 );

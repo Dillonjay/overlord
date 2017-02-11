@@ -42,7 +42,7 @@ class Landing extends Component {
 
             <div className="titulo">
               <a href='/auth/github'>OVERLORD</a>
-              <div class="wrap">
+              <div className="wrap">
               </div>
             </div>
 
