@@ -1,5 +1,4 @@
-import db from '../../../src/server/db.js';
-
+var db = require('../db');
 
 exports.createResource = function(resAttrs) {
     var attrs = Object.assign({}, resAttrs);

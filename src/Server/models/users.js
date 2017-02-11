@@ -1,4 +1,4 @@
-import db from '../db'
+var db = require('../db');
 
 exports.addUser = function(user){
 	return db('users').insert(user)

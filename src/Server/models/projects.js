@@ -1,4 +1,4 @@
-import db from '../db.js';
+var db = require('../db');
 
 exports.getProjectsByName = function(name){
 	return db('projects').where('user_name', name)

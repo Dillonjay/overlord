@@ -1,4 +1,4 @@
-import db from '../../../src/server/db.js';
+var db = require('../db');
 
 exports.addStory = function(story){
 	return db('stories').insert({

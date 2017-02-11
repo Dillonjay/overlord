@@ -1,18 +1,18 @@
-  import express from 'express';
+const express = require( 'express');
 const app = express();
-import passport from 'passport';
-import {Strategy as GithubStrategy} from 'passport-github'
-import browserify from 'browserify-middleware';
-import path from 'path';
-import db from './db.js';
-import bodyparser from 'body-parser';
-import session from 'express-session';
-import projects from'./models/projects.js'
-import cookieParser from 'cookie-parser'
-import users from './models/users'
-import resources from './models/resources';
-import Promise from 'bluebird';
-import stories from './models/stories'
+const passport = require( 'passport');
+const Strategy GithubStrategy = require('passport-github').Strategy
+const browserify = require( 'browserify-middleware');
+const path = require( 'path');
+const db = require( './db.js');
+const bodyparser = require( 'body-parser');
+const session = require( 'express-session');
+const projects = require('./models/projects.js)'
+const cookieParser = require( 'cookie-parser)'
+const users = require( './models/users)'
+const resources = require( './models/resources');
+const Promise = require( 'bluebird');
+const stories = require( './models/stories')
 
 
 passport.use(new GithubStrategy({
